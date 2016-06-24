@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="interface.css" />
+ 
+</head>
+<body>
+
+
+	<img id="moneyAngelDiv" src="backgrounds/moneyAngel.png"/>
+	
+
+	
+<div id="header" class="bigBox">
+
+<button id ="switchToBuildings" onclick="switchTo('buildingTab')">Buildings</button>
+<button id ="switchToScience" class="unlockedByScience" onclick="switchTo('scienceTab')">Science</button>
+<button id ="switchToResearch" class="unlockedByScience" onclick="switchTo('upgradeTab')">Upgrades</button>
+<button id ="switchToStats" onclick="refreshStats()">Stats</button>
+
+</div>
+
+<div id ="game">
+	<div id ="left" class="bigBox">
+		
+		<!--<button id ="winButton" onclick="win(500)" >500$</button>-->
+		    <p style='font-size:14px'><span>Money:</span></p>
+		    <p style='font-size:12px'><span id="money">0$</span></p><br />
+			<p style='font-size:14px'><span>Profit:</span></p>
+			<p style='font-size:12px'><span id="profit">0$</span></p>
+			<br/>
+			<p class="unlockedByScience" style='font-size:14px'><span id="scienceDisplaySpan" >Science:</span></p>
+			<p class="unlockedByScience" style='font-size:12px'><span id="scienceDisplay" >0</span></p>
+			<br/>
+		<p class="unlockedByScience" style='font-size:14px'><span id="scienceProfitDisplaySpan" >Science/tic</span></p>
+		<p class="unlockedByScience" style='font-size:12px'><span id="scienceProfitDisplay" >0</span></p>
+		<br/>
+		<button id="dontTouch" onclick="speculate()" title ="Speculate 10% of your Money at Wallstreet. Consider the Risk!" >Speculate</button>	
+		<br /> <br />
+	</div >
+
+
+
+<div id="mid" class="bigBox">	
+		
+<div id="buildingTab">
+<span id="buildingHead">Buildings</span> <br /> <br />
+	
+	<button onclick="moneyButtonClicked()" title ="1/Click">go begging</button>
+	<p id="unlockResearch">
+		<button id="unlockResearchB" onclick="unlockResearch()" title ="Costs 100. Unlocks Research" disabled style='float:right'>Unlock Research</button>
+	</p>
+	<br /><br />
+
+<div id="addBuildingsAfterThis"></div>
+
+<!--
+buildHTML adds all Buildings here. 
+-->
+
+</div>
+	<div id="statsTab">
+		<span id="statsHead">Statistics</span> <br /> <br />
+		<div id="addStatsAfterThis"></div>
+					
+		
+	</div>
+	
+	
+	<div id="upgradeTab" >			
+			<div id="research" class="unlockedByScience">			
+				<span id="researchHead">Upgrade Center</span> <br /> <br />
+			    <!--ResearchPoints:<span id="researchPoints">0</span><br /><br />-->
+				
+				<div id="addUpgradesAfterThis"></div>
+				<!--
+					buildHTML adds all Upgrades here. 
+				-->
+				
+			</div>
+			
+		</div>
+		
+	<div id="scienceTab">			
+			<div id="scienceTabInner" class="unlockedByScience">	
+			<span id="scienceHead">Research Center</span> <br /> <br />
+			<!--ResearchPoints:<span id="researchPoints">0</span><br /><br />-->
+			
+			<div id="addScienceAfterThis"></div>
+			<!--
+				buildHTML adds all Upgrades here. 
+			-->
+			
+		
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id = "right" class="bigBox">
+     <span id="logHead">Log</span><br />
+	 <span id="log0"> </span><br/>
+	 <span id="log1"> </span><br/>
+	 <span id="log2"> </span><br/>
+	 <span id="log3"> </span><br/>
+	 <span id="log4"> </span><br/>
+	 <span id="log5"> </span><br/>
+	 <span id="log6"> </span><br/>
+	 <span id="log7"> </span><br/>
+	 <span id="log8"> </span><br/>
+	 <span id="log9"> </span><br/>
+	 
+	
+
+	
+</div>
+
+</div>
+</div>
+<div id="onWin" style="display:none">
+<div id="againButton" style=""> <button onclick="location.reload()">Again</button></div>
+<div id = "winScreen"><br /><br /><br />YOU WIN! You are over 9000!!!</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+
+
+</html>
+
+

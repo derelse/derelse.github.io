@@ -1,0 +1,193 @@
+#winScreen{
+	font-size:40px;
+	margin:auto;
+	text-align:center;
+	animation: blink 0.4s linear infinite, rotate 1s linear infinite alternate;
+}
+
+body{
+	background:url("backgrounds/back1.png");
+	background-position:bottom;
+	background-repeat:no-repeat;
+	background-size:contain;
+} 
+
+#game{
+display:flex;
+}
+.bigBox{
+	padding:15px;
+	margin:20px;
+	box-shadow:1px 1px 4px rgba(0,0,0,10); 
+}
+#header{
+		
+	height:40px;
+	
+}
+#left, #mid, #right{
+	float:left;
+	height: auto;
+	background-color:white;
+}
+
+#left{
+	display:block;
+	width:175px;
+	padding:15px;
+	
+	
+}
+
+#mid{
+	display:block;
+	width:45%;
+	padding:15px;
+	float:top;
+}
+
+#right{
+	display:block;
+	width:150px;
+	padding:15px;
+	float:top;
+	
+}
+
+.unlockedByScience{
+	display:none;
+}
+
+
+#moneyAngelDiv{	
+position:fixed;
+height:100px;
+width:100px;
+z-index:100;
+animation: move 4s linear;
+animation-fill-mode: forwards;
+border-radius:50%;
+
+}
+
+@keyframes move{
+from{left:-10%;top:-10%;}
+to{left:110%;top:110%;}
+}
+
+button{
+	border:3px solid #eee;
+	padding:5px;
+	min-width:90px;
+	margin-right:10px;
+	transition:all 0.3s ease;
+	float:left;
+	
+	
+}
+
+#buildingTab p, #upgradeTab p, #scienceTab p  {
+	margin:0;
+	font-size: 12px;
+	}
+	
+	#statsTab p{
+		margin:0;
+		font-size:14px;
+	}
+	
+	#statsTab{
+	display:none;	
+	}
+
+#buildingTab button{
+	min-width:120px;
+	font-size:13px;
+	float:left;
+}
+#scienceTab button{
+	min-width:120px;
+	font-size:13px;
+	float:left;
+}
+
+#upgradeTab button{
+min-width:150px;
+float:left;
+}
+
+#upgradeTab,#buildingTab,#scienceTab{
+	display:none;
+}
+
+
+#research, #unlockResearchB{
+	display:none;
+}
+
+
+
+#winButton{
+	color: transparent;
+	background-color: transparent;
+	border: none;
+	padding:none;
+	margin: none;
+}
+
+button:hover{
+	border:3px solid white;
+	box-shadow:1px 1px 4px;
+	transition:all 0.11s ease;
+}
+button:focus{
+	outline:none;
+}
+
+#dontTouch{
+	display:none;
+    margin-right:20px;
+	float:right;
+
+}
+
+@keyframes blink{
+	from{opacity:0;}
+	50%{opacity:1;}
+	to{opacity:0;}
+}
+@keyframes rotate{
+	from{transform:rotate(-20deg) scale(1.20);}
+	to{transform:rotate(20deg) scale(0.8);}
+} 
+@keyframes grow{
+    from{transform:scale(1.10);}
+	to{transform:scale(0.90);}
+}
+
+#logHead, #reseachHead , #buildingHead{
+	font-size:16px;
+}
+
+#log0, #log1, #log2{
+	font-size:13px;
+}
+
+#log3, #log4, #log5{
+	opacity:0.8;
+		font-size:13px;
+	
+}
+#log6, #log7{
+	opacity:0.6;
+		font-size:13px;
+}
+#log8, #log9{
+	opacity:0.4;
+		font-size:13px;
+}
+
+
+*{
+	font-family:sans-serif;
+}
