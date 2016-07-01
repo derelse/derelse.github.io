@@ -452,14 +452,15 @@ function checkEvents(){
 				
 		var rng = Math.floor((Math.random() * 1000) + 1);
 		if (rng <300){
-		var tempDec=(Math.floor(money/2);
+		var tempDec=Math.floor(money/2);
 				writeLog("Your supervisor catches you playing.\n Money -"+tempDec +"$");
 				decMoney(tempDec);
 		}
 		else { 
 		var tempInc = Math.floor(money/4);
 		writeLog("Bonus Payment. \n Money +"+tempInc+"$");
-				incMoney(tempInc);}
+				incMoney(tempInc);
+				}
 		
 		}
 		if (event >=1998){
