@@ -408,26 +408,26 @@ else return number; }
 			var investion=Math.floor(money/10);
 			var event = Math.floor((Math.random() * 1000) + 1);
 			
-			if (event <50){
+			if (event <100){
 		incMoney(investion*2);
-		writeLog("You quadrupled your investion! gz. \n +"+investion*3 +"$");
+		writeLog("You quadrupled your investment! gz. \n +"+investion*3 +"$");
 			
 			}
 			
-			else{ if (event>=50 && event <400){
+			else{ if (event>=100 && event <500){
 		incMoney(investion);
-		writeLog("You doubled your investion! \n+"+investion+"$");
+		writeLog("You doubled your investment! \n+"+investion+"$");
 			}
 			
-		else{ if (event>=400 && event <850){
+		else{ if (event>=500 && event <900){
 			
 			decMoney(investion);
-			writeLog("You lost your whole investion. \n-"+investion+"$");
+			writeLog("You lost your whole investment. \n-"+investion+"$");
 		}
 		
 		else {		
 		decMoney(investion*2);
-		writeLog("You somehow lost double your investion. \n-"+investion*2+"$");
+		writeLog("You somehow lost double your investment. \n-"+investion*2+"$");
 		
 		}														
 	}}}
@@ -452,11 +452,14 @@ function checkEvents(){
 				
 		var rng = Math.floor((Math.random() * 1000) + 1);
 		if (rng <300){
-				writeLog("Your supervisor catches you playing.\n Money -50%");
-				decMoney(Math.floor(money/2));
+		var tempDec=(Math.floor(money/2);
+				writeLog("Your supervisor catches you playing.\n Money -"+tempDec +"$");
+				decMoney(tempDec);
 		}
-		else { writeLog("Bonus Payment. \n Geld +25%");
-				incMoney(Math.floor(money/4));}
+		else { 
+		var tempInc = Math.floor(money/4);
+		writeLog("Bonus Payment. \n Money +"+tempInc+"$");
+				incMoney(tempInc);}
 		
 		}
 		if (event >=1998){
@@ -480,7 +483,7 @@ function writeLog(text){
 
 function win(number){
 		incMoney(number);
-		writeLog("cheated 500$");
+		writeLog("cheated "+number+"$");
 }
 
 function addProfits(){

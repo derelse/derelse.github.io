@@ -1,9 +1,3 @@
-#winScreen{
-	font-size:40px;
-	margin:auto;
-	text-align:center;
-	animation: blink 0.4s linear infinite, rotate 1s linear infinite alternate;
-}
 
 body{
 	background:url("backgrounds/back1.png");
@@ -127,13 +121,6 @@ float:left;
 
 
 
-#winButton{
-	color: transparent;
-	background-color: transparent;
-	border: none;
-	padding:none;
-	margin: none;
-}
 
 button:hover{
 	border:3px solid white;
@@ -149,20 +136,6 @@ button:focus{
     margin-right:20px;
 	float:right;
 
-}
-
-@keyframes blink{
-	from{opacity:0;}
-	50%{opacity:1;}
-	to{opacity:0;}
-}
-@keyframes rotate{
-	from{transform:rotate(-20deg) scale(1.20);}
-	to{transform:rotate(20deg) scale(0.8);}
-} 
-@keyframes grow{
-    from{transform:scale(1.10);}
-	to{transform:scale(0.90);}
 }
 
 #logHead, #reseachHead , #buildingHead{
